@@ -41,7 +41,6 @@ final class HapticFeedbackNotificationEngine: HapticoEngine {
             generator.notificationOccurred(.warning)
         case .error:
             generator.notificationOccurred(.error)
-        case .impact(_): break
         }
     }
     

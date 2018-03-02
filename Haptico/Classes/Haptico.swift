@@ -17,7 +17,6 @@ public enum HapticoNotification {
     case success
     case warning
     case error
-    case impact(HapticoImpact)
 }
 
 public enum HapticoImpact {
