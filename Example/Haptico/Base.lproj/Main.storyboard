@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Haptico_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wfe-zV-j6L">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VdY-Hr-ptn">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="58.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wf4-F6-YqO">
+                                        <rect key="frame" x="0.0" y="58.5" width="343" height="58.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Success 📳">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="generateSuccess:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="13b-4p-3nl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c4m-rP-QA9">
+                                        <rect key="frame" x="0.0" y="117" width="343" height="58"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Warning 📳">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="generateWarning:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fDV-1y-2ab"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mbF-AU-r6F">
+                                        <rect key="frame" x="0.0" y="175" width="343" height="58.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Error 📳">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="generateError:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oIE-2c-DbK"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vW4-5o-RJU">
+                                        <rect key="frame" x="0.0" y="233.5" width="343" height="58.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31f-iO-pYr">
+                                        <rect key="frame" x="0.0" y="292" width="343" height="59"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Success Alert">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="successAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WPP-1K-uUI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L1t-uo-DLG">
+                                        <rect key="frame" x="0.0" y="351" width="343" height="59"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Error Alert">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="errorAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gQQ-Re-jPz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TI4-OW-Ppn">
+                                        <rect key="frame" x="0.0" y="410" width="343" height="59.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Warning Alert">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="warningAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gyq-98-p2s"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="byW-aU-hc3">
+                                        <rect key="frame" x="0.0" y="469.5" width="343" height="58.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMk-TE-5oB" customClass="HapticoButton" customModule="Haptico">
+                                        <rect key="frame" x="0.0" y="528" width="343" height="59.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Haptico Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Obw-Ft-dGe">
+                                        <rect key="frame" x="0.0" y="587.5" width="343" height="59.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="L1t-uo-DLG" firstAttribute="height" secondItem="TI4-OW-Ppn" secondAttribute="height" id="FkM-Qd-AcP"/>
+                                    <constraint firstItem="TI4-OW-Ppn" firstAttribute="height" secondItem="byW-aU-hc3" secondAttribute="height" id="RZb-00-xKT"/>
+                                    <constraint firstItem="c4m-rP-QA9" firstAttribute="height" secondItem="mbF-AU-r6F" secondAttribute="height" id="SkC-fx-xuk"/>
+                                    <constraint firstItem="mbF-AU-r6F" firstAttribute="height" secondItem="vW4-5o-RJU" secondAttribute="height" id="ZBX-py-Jbq"/>
+                                    <constraint firstItem="byW-aU-hc3" firstAttribute="height" secondItem="dMk-TE-5oB" secondAttribute="height" id="eaa-FF-ntf"/>
+                                    <constraint firstItem="31f-iO-pYr" firstAttribute="height" secondItem="L1t-uo-DLG" secondAttribute="height" id="gH2-2T-Ana"/>
+                                    <constraint firstItem="wf4-F6-YqO" firstAttribute="height" secondItem="c4m-rP-QA9" secondAttribute="height" id="hsI-he-an5"/>
+                                    <constraint firstItem="VdY-Hr-ptn" firstAttribute="height" secondItem="wf4-F6-YqO" secondAttribute="height" id="i8E-dp-7zr"/>
+                                    <constraint firstItem="dMk-TE-5oB" firstAttribute="height" secondItem="Obw-Ft-dGe" secondAttribute="height" id="m5Z-wJ-h5N"/>
+                                    <constraint firstItem="vW4-5o-RJU" firstAttribute="height" secondItem="31f-iO-pYr" secondAttribute="height" id="qCZ-Jm-d6L"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.41960784313725491" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wfe-zV-j6L" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="67p-Yz-sCS"/>
+                            <constraint firstItem="Wfe-zV-j6L" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="F4h-Ub-RIB"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Wfe-zV-j6L" secondAttribute="bottom" id="qR5-KP-g8s"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wfe-zV-j6L" secondAttribute="trailing" id="w1x-ue-iK5"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

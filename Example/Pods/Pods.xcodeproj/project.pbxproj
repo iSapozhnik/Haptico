@@ -1,0 +1,752 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10F44A41C957FF3C6ADB9FF34164E787 /* Pods-Haptico_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9470F51A502931B7FCB82BAAA633C7F /* Pods-Haptico_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BBA92F0746A8F97310BFEFC3D5CA55E /* Haptico.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC98672D35FD14536006B78A9E5DE18A /* Haptico.swift */; };
+		4A6907BA1A9AF869EA2616FE3B6D620B /* Pods-Haptico_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B2D7BCF12DE758ABA2040CA56B177D /* Pods-Haptico_Example-dummy.m */; };
+		66BBFE9CEB7F589160009139C197E4E2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		71AA736B381E9A3C646ACC65EFA1BCEB /* Haptico-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDF7F992B8FC1287F6EFE89B52F8ED64 /* Haptico-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A832F18698DF2B5ADD280C3AF53D908 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35FDDD51304DCBDD95F5C3AC258F7624 /* ReplaceMe.swift */; };
+		949E29113BA63959E49F523436FBC3AA /* Pods-Haptico_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47EE39EF797C8DB9739AFB7C2DF351BC /* Pods-Haptico_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4B703274DE37819B908E958FB88FD88 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		CCFD56BC3655E7C36F7C437BDCA47A23 /* HapticFeedbackEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E748563E42EDE939D8B9D6FD4B9B6D /* HapticFeedbackEngine.swift */; };
+		CF0837BA99AE2EBC5ED5FDE060F42930 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DFC6CACE9DA017EC63F6E51B4ABA0F94 /* Haptico-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2160D298FFD2D9084064DF45E249B1C7 /* Haptico-dummy.m */; };
+		E1577E4E12D218D5074EDEF5C139A79F /* Pods-Haptico_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E872C6AB320971D39463BA7A419A3A7 /* Pods-Haptico_Tests-dummy.m */; };
+		FF16B1DB204968E200E35F76 /* UIDevice+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16B1DA204968E200E35F76 /* UIDevice+Extensions.swift */; };
+		FF16B1DD204979B700E35F76 /* TapticEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16B1DC204979B700E35F76 /* TapticEngine.swift */; };
+		FF16B1DF20498D1400E35F76 /* UIViewController+Haptico.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16B1DE20498D1400E35F76 /* UIViewController+Haptico.swift */; };
+		FF16B1E12049918900E35F76 /* UIButton+Haptico.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16B1E02049918900E35F76 /* UIButton+Haptico.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89A782B04E874F3F239ECB6C15D251EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17D661A55A472727015888A180C52437;
+			remoteInfo = Haptico;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2160D298FFD2D9084064DF45E249B1C7 /* Haptico-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Haptico-dummy.m"; sourceTree = "<group>"; };
+		21DFB280A19E98135528DAC24842F5F3 /* Pods_Haptico_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Haptico_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21F14F2E3DA64A1B5155D5F75E5D7647 /* Pods-Haptico_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Haptico_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		22B2D7BCF12DE758ABA2040CA56B177D /* Pods-Haptico_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Haptico_Example-dummy.m"; sourceTree = "<group>"; };
+		35FDDD51304DCBDD95F5C3AC258F7624 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = Haptico/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		37E15871EDCB458749665948441087DF /* Pods-Haptico_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Haptico_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3C4A7D14D6D8F01D835AF90A7DB932A0 /* Pods-Haptico_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Haptico_Example.modulemap"; sourceTree = "<group>"; };
+		47EE39EF797C8DB9739AFB7C2DF351BC /* Pods-Haptico_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Haptico_Example-umbrella.h"; sourceTree = "<group>"; };
+		4C08120B1EFC52623FA4C7396E9D1741 /* Haptico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Haptico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D4CF8188EB32E1594F9240AFDF516B9 /* Pods_Haptico_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Haptico_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E872C6AB320971D39463BA7A419A3A7 /* Pods-Haptico_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Haptico_Tests-dummy.m"; sourceTree = "<group>"; };
+		5483B088FE4F8AC64D44CDE5177E52E7 /* Pods-Haptico_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Haptico_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67394E0EEC207F650E9819A3D977DF2D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		705549D6E8E0C3B1B3DD60EADF35A63E /* Pods-Haptico_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Haptico_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7392F60DF5A7B68438C17EAD8146F4DC /* Pods-Haptico_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Haptico_Tests-resources.sh"; sourceTree = "<group>"; };
+		76161FB74AF8679789950018FB95FD83 /* Pods-Haptico_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Haptico_Example-resources.sh"; sourceTree = "<group>"; };
+		8450579168C7701EBA031F0C9CA1B95A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A492C549A5434EC3ADE3BA2D8C0BFB5 /* Pods-Haptico_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Haptico_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		8A89CBAE2DD9F29D95FD68109737BD89 /* Pods-Haptico_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Haptico_Tests.modulemap"; sourceTree = "<group>"; };
+		922A72FB0549A7AE38D49415AA43D193 /* Pods-Haptico_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Haptico_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9467A9006232265A17A131E685E11C8C /* Pods-Haptico_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Haptico_Example-frameworks.sh"; sourceTree = "<group>"; };
+		99E748563E42EDE939D8B9D6FD4B9B6D /* HapticFeedbackEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HapticFeedbackEngine.swift; sourceTree = "<group>"; };
+		A6E44A2FF6E50349C8A0AB1D4B703DEB /* Pods-Haptico_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Haptico_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AC98672D35FD14536006B78A9E5DE18A /* Haptico.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Haptico.swift; path = Haptico/Classes/Haptico.swift; sourceTree = "<group>"; };
+		B42AD529E257A56283D5AA0A55198629 /* Pods-Haptico_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Haptico_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BA4A80B7E571A836298DE986C7632527 /* Haptico.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Haptico.modulemap; sourceTree = "<group>"; };
+		D11E608EC586398AC4DE7D52BA9DF1EE /* Pods-Haptico_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Haptico_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DCDF22D15DA5C03AE86C5896FB7A8734 /* Haptico-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptico-prefix.pch"; sourceTree = "<group>"; };
+		E572428B37F6AC95767E0A94B551E0D3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9470F51A502931B7FCB82BAAA633C7F /* Pods-Haptico_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Haptico_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F0A5E09AD98FECDB05F0449965A550EF /* Haptico.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haptico.xcconfig; sourceTree = "<group>"; };
+		FDF7F992B8FC1287F6EFE89B52F8ED64 /* Haptico-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Haptico-umbrella.h"; sourceTree = "<group>"; };
+		FF16B1DA204968E200E35F76 /* UIDevice+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extensions.swift"; sourceTree = "<group>"; };
+		FF16B1DC204979B700E35F76 /* TapticEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapticEngine.swift; sourceTree = "<group>"; };
+		FF16B1DE20498D1400E35F76 /* UIViewController+Haptico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Haptico.swift"; sourceTree = "<group>"; };
+		FF16B1E02049918900E35F76 /* UIButton+Haptico.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Haptico.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77E12DE517320A50ABC1ED1BB7437281 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4B703274DE37819B908E958FB88FD88 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E0C16199F19C31C986A8E9D0AFEC6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF0837BA99AE2EBC5ED5FDE060F42930 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50D249D7468BDFDAD2CE77A63556BBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66BBFE9CEB7F589160009139C197E4E2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EC168D5D93F0CCD14D80FDE998A7B38 /* Engines */ = {
+			isa = PBXGroup;
+			children = (
+				99E748563E42EDE939D8B9D6FD4B9B6D /* HapticFeedbackEngine.swift */,
+				FF16B1DC204979B700E35F76 /* TapticEngine.swift */,
+			);
+			name = Engines;
+			path = Haptico/Classes/Engines;
+			sourceTree = "<group>";
+		};
+		2227D1C0B58B9969147ADFF04F274D61 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E41F5D3DF1C8F4E608EB9FD96510AA6 /* Pods-Haptico_Example */,
+				982BFE8D90935C4F2E591B1741BF5CC4 /* Pods-Haptico_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3E41F5D3DF1C8F4E608EB9FD96510AA6 /* Pods-Haptico_Example */ = {
+			isa = PBXGroup;
+			children = (
+				8450579168C7701EBA031F0C9CA1B95A /* Info.plist */,
+				3C4A7D14D6D8F01D835AF90A7DB932A0 /* Pods-Haptico_Example.modulemap */,
+				37E15871EDCB458749665948441087DF /* Pods-Haptico_Example-acknowledgements.markdown */,
+				705549D6E8E0C3B1B3DD60EADF35A63E /* Pods-Haptico_Example-acknowledgements.plist */,
+				22B2D7BCF12DE758ABA2040CA56B177D /* Pods-Haptico_Example-dummy.m */,
+				9467A9006232265A17A131E685E11C8C /* Pods-Haptico_Example-frameworks.sh */,
+				76161FB74AF8679789950018FB95FD83 /* Pods-Haptico_Example-resources.sh */,
+				47EE39EF797C8DB9739AFB7C2DF351BC /* Pods-Haptico_Example-umbrella.h */,
+				8A492C549A5434EC3ADE3BA2D8C0BFB5 /* Pods-Haptico_Example.debug.xcconfig */,
+				B42AD529E257A56283D5AA0A55198629 /* Pods-Haptico_Example.release.xcconfig */,
+			);
+			name = "Pods-Haptico_Example";
+			path = "Target Support Files/Pods-Haptico_Example";
+			sourceTree = "<group>";
+		};
+		5DB885AEE6E1EF54685832796530EFB7 /* Haptico */ = {
+			isa = PBXGroup;
+			children = (
+				FF16B1D9204968D100E35F76 /* Extensions */,
+				AC98672D35FD14536006B78A9E5DE18A /* Haptico.swift */,
+				35FDDD51304DCBDD95F5C3AC258F7624 /* ReplaceMe.swift */,
+				1EC168D5D93F0CCD14D80FDE998A7B38 /* Engines */,
+				9D23ECD47E4BBC3BF099E40ED0B2DE9E /* Support Files */,
+			);
+			name = Haptico;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6294A819D8C2F2C7E7EC3E55B5436A0A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DB885AEE6E1EF54685832796530EFB7 /* Haptico */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				6294A819D8C2F2C7E7EC3E55B5436A0A /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D659E9530FE8DC3E224FB8C6243348F1 /* Products */,
+				2227D1C0B58B9969147ADFF04F274D61 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		982BFE8D90935C4F2E591B1741BF5CC4 /* Pods-Haptico_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E572428B37F6AC95767E0A94B551E0D3 /* Info.plist */,
+				8A89CBAE2DD9F29D95FD68109737BD89 /* Pods-Haptico_Tests.modulemap */,
+				5483B088FE4F8AC64D44CDE5177E52E7 /* Pods-Haptico_Tests-acknowledgements.markdown */,
+				A6E44A2FF6E50349C8A0AB1D4B703DEB /* Pods-Haptico_Tests-acknowledgements.plist */,
+				4E872C6AB320971D39463BA7A419A3A7 /* Pods-Haptico_Tests-dummy.m */,
+				922A72FB0549A7AE38D49415AA43D193 /* Pods-Haptico_Tests-frameworks.sh */,
+				7392F60DF5A7B68438C17EAD8146F4DC /* Pods-Haptico_Tests-resources.sh */,
+				E9470F51A502931B7FCB82BAAA633C7F /* Pods-Haptico_Tests-umbrella.h */,
+				D11E608EC586398AC4DE7D52BA9DF1EE /* Pods-Haptico_Tests.debug.xcconfig */,
+				21F14F2E3DA64A1B5155D5F75E5D7647 /* Pods-Haptico_Tests.release.xcconfig */,
+			);
+			name = "Pods-Haptico_Tests";
+			path = "Target Support Files/Pods-Haptico_Tests";
+			sourceTree = "<group>";
+		};
+		9D23ECD47E4BBC3BF099E40ED0B2DE9E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA4A80B7E571A836298DE986C7632527 /* Haptico.modulemap */,
+				F0A5E09AD98FECDB05F0449965A550EF /* Haptico.xcconfig */,
+				2160D298FFD2D9084064DF45E249B1C7 /* Haptico-dummy.m */,
+				DCDF22D15DA5C03AE86C5896FB7A8734 /* Haptico-prefix.pch */,
+				FDF7F992B8FC1287F6EFE89B52F8ED64 /* Haptico-umbrella.h */,
+				67394E0EEC207F650E9819A3D977DF2D /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Haptico";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D659E9530FE8DC3E224FB8C6243348F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C08120B1EFC52623FA4C7396E9D1741 /* Haptico.framework */,
+				4D4CF8188EB32E1594F9240AFDF516B9 /* Pods_Haptico_Example.framework */,
+				21DFB280A19E98135528DAC24842F5F3 /* Pods_Haptico_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF16B1D9204968D100E35F76 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FF16B1DA204968E200E35F76 /* UIDevice+Extensions.swift */,
+				FF16B1DE20498D1400E35F76 /* UIViewController+Haptico.swift */,
+				FF16B1E02049918900E35F76 /* UIButton+Haptico.swift */,
+			);
+			name = Extensions;
+			path = Haptico/Classes/Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		462C0F49330EC48B2CD0326E1B9971FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949E29113BA63959E49F523436FBC3AA /* Pods-Haptico_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0062F92FDBBB9F04BC823E56B8245D3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10F44A41C957FF3C6ADB9FF34164E787 /* Pods-Haptico_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D243BDD67FAC1BA81F125DFD8C1930D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71AA736B381E9A3C646ACC65EFA1BCEB /* Haptico-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		17D661A55A472727015888A180C52437 /* Haptico */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69F1C4951EED5E753485D2D39491F1E6 /* Build configuration list for PBXNativeTarget "Haptico" */;
+			buildPhases = (
+				FB0BA64296A2F9A9C78E5C91FBC24D0F /* Sources */,
+				77E12DE517320A50ABC1ED1BB7437281 /* Frameworks */,
+				D243BDD67FAC1BA81F125DFD8C1930D1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Haptico;
+			productName = Haptico;
+			productReference = 4C08120B1EFC52623FA4C7396E9D1741 /* Haptico.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D7B90C625F7170772369E9117AB7194C /* Pods-Haptico_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2C653C9395DDCC35EB5CC37B5F51AC /* Build configuration list for PBXNativeTarget "Pods-Haptico_Example" */;
+			buildPhases = (
+				A355573E89D2003D3695F3B678B29D25 /* Sources */,
+				E50D249D7468BDFDAD2CE77A63556BBE /* Frameworks */,
+				462C0F49330EC48B2CD0326E1B9971FE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29889124699761AD8515F5184614A13A /* PBXTargetDependency */,
+			);
+			name = "Pods-Haptico_Example";
+			productName = "Pods-Haptico_Example";
+			productReference = 4D4CF8188EB32E1594F9240AFDF516B9 /* Pods_Haptico_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF5F7B25360CB76BBED582860F349B19 /* Pods-Haptico_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBFCC5D370766B2DB8079A90F7E1DC26 /* Build configuration list for PBXNativeTarget "Pods-Haptico_Tests" */;
+			buildPhases = (
+				6E200BEE1A099003A87F1F6E6DC795CE /* Sources */,
+				79E0C16199F19C31C986A8E9D0AFEC6B /* Frameworks */,
+				C0062F92FDBBB9F04BC823E56B8245D3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Haptico_Tests";
+			productName = "Pods-Haptico_Tests";
+			productReference = 21DFB280A19E98135528DAC24842F5F3 /* Pods_Haptico_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D659E9530FE8DC3E224FB8C6243348F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17D661A55A472727015888A180C52437 /* Haptico */,
+				D7B90C625F7170772369E9117AB7194C /* Pods-Haptico_Example */,
+				DF5F7B25360CB76BBED582860F349B19 /* Pods-Haptico_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E200BEE1A099003A87F1F6E6DC795CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1577E4E12D218D5074EDEF5C139A79F /* Pods-Haptico_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A355573E89D2003D3695F3B678B29D25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A6907BA1A9AF869EA2616FE3B6D620B /* Pods-Haptico_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0BA64296A2F9A9C78E5C91FBC24D0F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCFD56BC3655E7C36F7C437BDCA47A23 /* HapticFeedbackEngine.swift in Sources */,
+				FF16B1DF20498D1400E35F76 /* UIViewController+Haptico.swift in Sources */,
+				DFC6CACE9DA017EC63F6E51B4ABA0F94 /* Haptico-dummy.m in Sources */,
+				1BBA92F0746A8F97310BFEFC3D5CA55E /* Haptico.swift in Sources */,
+				FF16B1DB204968E200E35F76 /* UIDevice+Extensions.swift in Sources */,
+				FF16B1DD204979B700E35F76 /* TapticEngine.swift in Sources */,
+				FF16B1E12049918900E35F76 /* UIButton+Haptico.swift in Sources */,
+				7A832F18698DF2B5ADD280C3AF53D908 /* ReplaceMe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29889124699761AD8515F5184614A13A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Haptico;
+			target = 17D661A55A472727015888A180C52437 /* Haptico */;
+			targetProxy = 89A782B04E874F3F239ECB6C15D251EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		12B53F42764F8B7E0383EDE378D326B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D11E608EC586398AC4DE7D52BA9DF1EE /* Pods-Haptico_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Haptico_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Haptico_Tests/Pods-Haptico_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Haptico_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6CA704403CD76121E2EDF2A501B238A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B42AD529E257A56283D5AA0A55198629 /* Pods-Haptico_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Haptico_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Haptico_Example/Pods-Haptico_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Haptico_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8C6C64190E1D727882022D4C46D20ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21F14F2E3DA64A1B5155D5F75E5D7647 /* Pods-Haptico_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Haptico_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Haptico_Tests/Pods-Haptico_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Haptico_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E26227616C71EEDA2737C7BD35F9ADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A492C549A5434EC3ADE3BA2D8C0BFB5 /* Pods-Haptico_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Haptico_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Haptico_Example/Pods-Haptico_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Haptico_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B170C7D069736BEB747D8D612B44E4FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0A5E09AD98FECDB05F0449965A550EF /* Haptico.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Haptico/Haptico-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Haptico/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Haptico/Haptico.modulemap";
+				PRODUCT_NAME = Haptico;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C561D1F53F1D5026755C69D3838B76E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0A5E09AD98FECDB05F0449965A550EF /* Haptico.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Haptico/Haptico-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Haptico/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Haptico/Haptico.modulemap";
+				PRODUCT_NAME = Haptico;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
+				731DC216E1A58545B559F6E0A2418060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69F1C4951EED5E753485D2D39491F1E6 /* Build configuration list for PBXNativeTarget "Haptico" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C561D1F53F1D5026755C69D3838B76E9 /* Debug */,
+				B170C7D069736BEB747D8D612B44E4FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2C653C9395DDCC35EB5CC37B5F51AC /* Build configuration list for PBXNativeTarget "Pods-Haptico_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E26227616C71EEDA2737C7BD35F9ADD /* Debug */,
+				6CA704403CD76121E2EDF2A501B238A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBFCC5D370766B2DB8079A90F7E1DC26 /* Build configuration list for PBXNativeTarget "Pods-Haptico_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12B53F42764F8B7E0383EDE378D326B9 /* Debug */,
+				8C6C64190E1D727882022D4C46D20ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
