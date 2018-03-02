@@ -90,8 +90,8 @@ public final class Haptico {
         }
     }
     
-    public func generateFeedbackFromPattern(_ pattern: String) {
-        let pattern = HapticoPattern(pattern: pattern)
+    public func generateFeedbackFromPattern(_ pattern: String, delay: Double) {
+        let pattern = HapticoPattern(pattern: pattern, delay: delay)
         let processor = HapticoProcessor(pattern: pattern)
         processor.process()
     }

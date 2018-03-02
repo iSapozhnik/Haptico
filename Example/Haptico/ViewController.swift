@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func pattern(_ sender: Any) {
-        Haptico.shared().
+        Haptico.shared().generateFeedbackFromPattern("000-00-0", delay: 1.0)
     }
     
     private func showAlert(title: String, message: String, hapticNotification: HapticoNotification) {
