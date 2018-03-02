@@ -73,6 +73,6 @@ class SignalOperation: Operation {
         DispatchQueue.main.async {
             self.engine?.generate(self.impact)
         }
-        Thread.sleep(forTimeInterval: 0.1)
+        Thread.sleep(forTimeInterval: 0.11)
     }
 }
