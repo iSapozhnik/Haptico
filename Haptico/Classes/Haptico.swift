@@ -89,4 +89,10 @@ public final class Haptico {
             impactGenerator.heavy.impactOccurred()
         }
     }
+    
+    public func generateFeedbackFromPattern(_ pattern: String) {
+        let pattern = HapticoPattern(pattern: pattern)
+        let processor = HapticoProcessor(pattern: pattern)
+        processor.process()
+    }
 }

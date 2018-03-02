@@ -32,6 +32,10 @@ class ViewController: UIViewController {
         showAlert(title: "Warning 📳", message: "This is warning alert with haptic feedback", hapticNotification: .warning)
     }
     
+    @IBAction func pattern(_ sender: Any) {
+        Haptico.shared().
+    }
+    
     private func showAlert(title: String, message: String, hapticNotification: HapticoNotification) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
