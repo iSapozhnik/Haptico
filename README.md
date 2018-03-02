@@ -1,1 +1,3 @@
+![](Assets/Haptico.png)
+
 # Haptico
