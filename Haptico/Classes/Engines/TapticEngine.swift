@@ -33,6 +33,7 @@ final class TapticEngine: HapticoEngine {
             AudioServicesPlaySystemSoundWithCompletion(SoundID.warningID, nil)
         case .error:
             AudioServicesPlaySystemSoundWithCompletion(SoundID.errorID, nil)
+        case .impact(_): break
         }
     }
 }

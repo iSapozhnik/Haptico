@@ -17,6 +17,7 @@ public enum HapticoNotification {
     case success
     case warning
     case error
+    case impact(HapticoImpact)
 }
 
 public enum HapticoImpact {
@@ -53,10 +54,7 @@ public final class Haptico {
         return engine
     }
     
-    @available(iOS 10.0, *)
-    private var impactGenerator: (light: UIImpactFeedbackGenerator, medium: UIImpactFeedbackGenerator, heavy: UIImpactFeedbackGenerator) {
-        return (light: UIImpactFeedbackGenerator(style: .light), medium: UIImpactFeedbackGenerator(style: .medium), heavy: UIImpactFeedbackGenerator(style: .heavy))
-    }
+    private var patternEngine: PatternEngine?
     
     public var logEnabled: Bool = true
     
@@ -78,21 +76,22 @@ public final class Haptico {
         engine?.generate(feedbackNotification)
     }
     
-    public func generateImpact(_ impact: HapticoImpact) {
-        guard #available(iOS 10, *) else { return }
-        switch impact {
-        case .light:
-            impactGenerator.light.impactOccurred()
-        case .medium:
-            impactGenerator.medium.impactOccurred()
-        case .heavy:
-            impactGenerator.heavy.impactOccurred()
-        }
+    public func generate(_ impact: HapticoImpact) {
+        guard let engine = self.engine as? HapticFeedbackNotificationEngine else { return }
+        engine.generate(impact)
     }
     
     public func generateFeedbackFromPattern(_ pattern: String, delay: Double) {
+        guard let engine = self.engine as? HapticFeedbackNotificationEngine else { return }
+        
+        if patternEngine == nil {
+            patternEngine = PatternEngine(hapticEngine: engine)
+        }
+        
+        guard let patternEngine = self.patternEngine, patternEngine.isFinished else { return }
+        
         let pattern = HapticoPattern(pattern: pattern, delay: delay)
-        let processor = HapticoProcessor(pattern: pattern)
-        processor.process()
+        patternEngine.pattern = pattern
+        patternEngine.generate()
     }
 }

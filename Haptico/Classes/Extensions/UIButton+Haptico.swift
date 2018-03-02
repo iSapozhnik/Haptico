@@ -17,10 +17,10 @@ class HapticoButton: UIButton {
     }
     
     @objc private func didPress() {
-        Haptico.shared().generateImpact(.heavy)
+        Haptico.shared().generate(.heavy)
     }
     
     @objc private func didRelease() {
-        Haptico.shared().generateImpact(.light)
+        Haptico.shared().generate(.light)
     }
 }
