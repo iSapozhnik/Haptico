@@ -24,7 +24,6 @@
 		E1577E4E12D218D5074EDEF5C139A79F /* Pods-Haptico_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E872C6AB320971D39463BA7A419A3A7 /* Pods-Haptico_Tests-dummy.m */; };
 		F2E7B4B8827252AB3413B8FAEF40C75F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		F7AC226CFDC7E695C3079B80D63686BB /* Haptico-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB15A8EE6210A0A9674EFC53780F437 /* Haptico-dummy.m */; };
-		FF16B1E32049EBCA00E35F76 /* FMSynthesizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF16B1E22049EBCA00E35F76 /* FMSynthesizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +66,7 @@
 		9467A9006232265A17A131E685E11C8C /* Pods-Haptico_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Haptico_Example-frameworks.sh"; sourceTree = "<group>"; };
 		9B052906DA4905A7ADFB71D255337167 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EB15A8EE6210A0A9674EFC53780F437 /* Haptico-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Haptico-dummy.m"; sourceTree = "<group>"; };
-		A5DDC5569C159FA874175932BDE678E7 /* HapticoPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HapticoPattern.swift; path = Haptico/Classes/HapticoPattern.swift; sourceTree = "<group>"; };
+		A5DDC5569C159FA874175932BDE678E7 /* HapticoPattern.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HapticoPattern.swift; sourceTree = "<group>"; };
 		A6E44A2FF6E50349C8A0AB1D4B703DEB /* Pods-Haptico_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Haptico_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		B42AD529E257A56283D5AA0A55198629 /* Pods-Haptico_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Haptico_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BC95DDD25DBAC49FBB9ABB8F0668FC5A /* UIButton+Haptico.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+Haptico.swift"; sourceTree = "<group>"; };
@@ -77,7 +76,6 @@
 		E9470F51A502931B7FCB82BAAA633C7F /* Pods-Haptico_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Haptico_Tests-umbrella.h"; sourceTree = "<group>"; };
 		EDCB5B61A72200F3E24F10B1CA7814ED /* Haptico.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Haptico.xcconfig; sourceTree = "<group>"; };
 		EE07783A8AD751CE12D2062DBFC10E04 /* PatternEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PatternEngine.swift; sourceTree = "<group>"; };
-		FF16B1E22049EBCA00E35F76 /* FMSynthesizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FMSynthesizer.swift; path = Haptico/Classes/FMSynthesizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,8 +225,6 @@
 			isa = PBXGroup;
 			children = (
 				1A4692FCB0D7CBFDD376DD0BA5BFBEEB /* Haptico.swift */,
-				A5DDC5569C159FA874175932BDE678E7 /* HapticoPattern.swift */,
-				FF16B1E22049EBCA00E35F76 /* FMSynthesizer.swift */,
 				E9A4F176BD1E2062C9D6A5E8AC009AD3 /* Engines */,
 				6FA337747E260DE22AC894A9E2635798 /* Extensions */,
 				8F9136B34A4A29A6F4A344CA2ACA323D /* Support Files */,
@@ -242,6 +238,7 @@
 			children = (
 				51D40EFA81A7963020FAB19FED72141E /* HapticFeedbackEngine.swift */,
 				EE07783A8AD751CE12D2062DBFC10E04 /* PatternEngine.swift */,
+				A5DDC5569C159FA874175932BDE678E7 /* HapticoPattern.swift */,
 				48D58AA6696CB5A43202B3FCE9B2661A /* TapticEngine.swift */,
 			);
 			name = Engines;
@@ -383,7 +380,6 @@
 				F7AC226CFDC7E695C3079B80D63686BB /* Haptico-dummy.m in Sources */,
 				B01AB93ADEC62E4C018B388604D3D4DE /* Haptico.swift in Sources */,
 				1D21B8EE2C56B3A2AF7213014B01BA52 /* HapticoPattern.swift in Sources */,
-				FF16B1E32049EBCA00E35F76 /* FMSynthesizer.swift in Sources */,
 				5513F73B196C737C07F2F5E7E5CADA95 /* PatternEngine.swift in Sources */,
 				67CB5147EE81CDFC3CDFA87E4C0736EE /* TapticEngine.swift in Sources */,
 				CF328E978AEED77619D8BDFD3A768434 /* UIButton+Haptico.swift in Sources */,
