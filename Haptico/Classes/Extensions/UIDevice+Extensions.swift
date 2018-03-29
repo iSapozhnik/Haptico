@@ -19,13 +19,17 @@ internal extension UIDevice {
     internal var hasTapticEngine: Bool {
         get {
             return deviceType == .iPhone6S || deviceType == .iPhone6SPlus ||
-                deviceType == .iPhone7 || deviceType == .iPhone7Plus
+                deviceType == .iPhone7 || deviceType == .iPhone7Plus ||
+                deviceType == .iPhone8 || deviceType == .iPhone8Plus ||
+                deviceType == .iPhoneX
         }
     }
     
     internal var hasHapticFeedback: Bool {
         get {
-            return deviceType == .iPhone7 || deviceType == .iPhone7Plus
+            return deviceType == .iPhone7 || deviceType == .iPhone7Plus ||
+            deviceType == .iPhone8 || deviceType == .iPhone8Plus ||
+            deviceType == .iPhoneX
         }
     }
 }
