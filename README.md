@@ -1,4 +1,4 @@
-![](Assets/Haptico.png)
+![](https://github.com/iSapozhnik/Haptico/raw/master/Assets/Haptico.png)
 
 # Haptico
 

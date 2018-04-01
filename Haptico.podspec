@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Haptico'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Haptico - easy to use haptic feedback generator with pattern-play support'
 
 # This description is used to generate tags and improve search results.
