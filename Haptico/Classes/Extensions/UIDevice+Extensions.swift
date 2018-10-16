@@ -63,6 +63,9 @@ internal enum DeviceType: String, EnumProtocol {
     case iPhone8Plus
     
     case iPhoneX
+    case iPhoneXS
+    case iPhoneXSMax
+    case iPhoneXR
     
     case iPodTouch1G
     case iPodTouch2G
@@ -133,6 +136,9 @@ internal enum DeviceType: String, EnumProtocol {
         case .iPhone8: return "iPhone 8"
         case .iPhone8Plus: return "iPhone 8 Plus"
         case .iPhoneX: return "iPhone X"
+        case .iPhoneXS: return "iPHone XS"
+        case .iPhoneXSMax: return "iPhone XS Max"
+        case .iPhoneXR: return "iPhone XR"
         case .iPodTouch1G: return "iPod Touch 1G"
         case .iPodTouch2G: return "iPod Touch 2G"
         case .iPodTouch3G: return "iPod Touch 3G"
@@ -181,6 +187,9 @@ internal enum DeviceType: String, EnumProtocol {
         case .iPhone8: return ["iPhone10,1", "iPhone10,4"]
         case .iPhone8Plus: return ["iPhone10,2", "iPhone10,5"]
         case .iPhoneX: return ["iPhone10,3", "iPhone10,6"]
+        case .iPhoneXS: return ["iPhone11,2"]
+        case .iPhoneXSMax: return ["iPhone11,4", "iPhone11,6"]
+        case .iPhoneXR: return ["iPhone11,8"]
             
         case .iPodTouch1G: return ["iPod1,1"]
         case .iPodTouch2G: return ["iPod2,1"]
