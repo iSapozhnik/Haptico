@@ -8,6 +8,7 @@
 import Foundation
 
 // https://github.com/schickling/Device.swift/blob/master/Device/UIDeviceExtension.swift
+// https://ipsw.me/otas
 // MARK: -
 internal extension UIDevice {
     
