@@ -21,21 +21,24 @@ internal extension UIDevice {
             return deviceType == .iPhone6S || deviceType == .iPhone6SPlus ||
                 deviceType == .iPhone7 || deviceType == .iPhone7Plus ||
                 deviceType == .iPhone8 || deviceType == .iPhone8Plus ||
-                deviceType == .iPhoneX
+                deviceType == .iPhoneX || deviceType == .iPhoneXR ||
+                deviceType == .iPhoneXS || deviceType == .iPhoneXSMax
+
         }
     }
     
     internal var hasHapticFeedback: Bool {
         get {
             return deviceType == .iPhone7 || deviceType == .iPhone7Plus ||
-            deviceType == .iPhone8 || deviceType == .iPhone8Plus ||
-            deviceType == .iPhoneX
+                deviceType == .iPhone8 || deviceType == .iPhone8Plus ||
+                deviceType == .iPhoneX || deviceType == .iPhoneXR ||
+                deviceType == .iPhoneXS || deviceType == .iPhoneXSMax
         }
     }
 }
 
 /// Enum representing the different types of iOS devices available
-internal enum DeviceType: String, EnumProtocol {
+internal enum DeviceType: String {
     case iPhone2G
     
     case iPhone3G
@@ -116,7 +119,6 @@ internal enum DeviceType: String, EnumProtocol {
     // MARK: Variables
     /// Returns the display name of the device type
     internal var displayName: String {
-        
         switch self {
         case .iPhone2G: return "iPhone 2G"
         case .iPhone3G: return "iPhone 3G"
@@ -190,7 +192,7 @@ internal enum DeviceType: String, EnumProtocol {
         case .iPhoneXS: return ["iPhone11,2"]
         case .iPhoneXSMax: return ["iPhone11,4", "iPhone11,6"]
         case .iPhoneXR: return ["iPhone11,8"]
-            
+
         case .iPodTouch1G: return ["iPod1,1"]
         case .iPodTouch2G: return ["iPod2,1"]
         case .iPodTouch3G: return ["iPod3,1"]
@@ -233,29 +235,51 @@ internal enum DeviceType: String, EnumProtocol {
     }
 }
 
-
-// MARK: - EnumProtocol
-internal protocol EnumProtocol: Hashable {
-    /// -returns: All Enum Values
-    static var all: [Self] { get }
-}
-
-// MARK: -
-// MARK: - Extensions
-internal extension EnumProtocol {
-    
-    static var all: [Self] {
-        typealias Type = Self
-        let cases = AnySequence { () -> AnyIterator<Type> in
-            var raw = 0
-            return AnyIterator {
-                let current: Self = withUnsafePointer(to: &raw) { $0.withMemoryRebound(to: Type.self, capacity: 1) { $0.pointee } }
-                guard current.hashValue == raw else { return nil }
-                raw += 1
-                return current
-            }
-        }
-        
-        return Array(cases)
+extension DeviceType {
+    static var all: [DeviceType] {
+        return [
+        iPhone2G,
+        iPhone3G,
+        iPhone3GS,
+        iPhone4,
+        iPhone4S,
+        iPhone5,
+        iPhone5C,
+        iPhone5S,
+        iPhone6,
+        iPhone6Plus,
+        iPhone6S,
+        iPhone6SPlus,
+        iPhoneSE,
+        iPhone7,
+        iPhone7Plus,
+        iPhone8,
+        iPhone8Plus,
+        iPhoneX,
+        iPhoneXS,
+        iPhoneXSMax,
+        iPhoneXR,
+        iPodTouch1G,
+        iPodTouch2G,
+        iPodTouch3G,
+        iPodTouch4G,
+        iPodTouch5G,
+        iPodTouch6G,
+        iPad,
+        iPad2,
+        iPad3,
+        iPad4,
+        iPadMini,
+        iPadMiniRetina,
+        iPadMini3,
+        iPadMini4,
+        iPadAir,
+        iPadAir2,
+        iPadPro9Inch,
+        iPadPro10p5Inch,
+        iPadPro12Inch,
+        simulator,
+        notAvailable
+        ]
     }
 }
