@@ -89,7 +89,7 @@ Each character in this string represents some specific haptic impact:
 ### 4. UI extensions <a name="ui-extensions"></a>
 Haptico comes with a couple of UI Extensions: HapticoButton (which is subclass of UIButton) and UIAlertController extension with haptic feedback.
 
-In order to start using HapticoButton - just set the class name in your Storyboard to HapticoButton. Then with UIControlEvents.touchDown event you will get heavy impact feedback and with UIControlEvents.touchUpInside and UIControlEvents.touchUpOutside you will get light impact eedback.
+In order to start using HapticoButton - just set the class name in your Storyboard to HapticoButton. Then with UIControlEvents.touchDown event you will get heavy impact feedback and with UIControlEvents.touchUpInside and UIControlEvents.touchUpOutside you will get light impact feedback.
 
 To use Haptico together with UIAlertController follow this simple example:
 
