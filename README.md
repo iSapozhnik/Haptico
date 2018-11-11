@@ -11,10 +11,10 @@ Haptico is easy to use iOS haptic feedback gnerator. Besides default haptic feed
 # Table of contents
 * [Example](#example)
 * [How to use](#how-to-use)
- 1. [Generating predefined default feedbacks](#predefined-feedbacks)
- 2. [Generating impact feedbacks](#impact-feedbacks)
- 3. [Pattern play](#pattern-play)
- 4. [UI Extensions](#ui-extensions)
+	1. [Generating predefined default feedbacks](#predefined-feedbacks)
+	2. [Generating impact feedbacks](#impact-feedbacks)
+	3. [Pattern play](#pattern-play)
+	4. [UI Extensions](#ui-extensions)
 * [Installation](#installation)
 * [Author](#license)
 
