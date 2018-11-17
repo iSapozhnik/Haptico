@@ -57,9 +57,7 @@ public final class Haptico {
     
     public var logEnabled: Bool = true
     
-    public class func shared() -> Haptico {
-        return sharedHaptico
-    }
+    public static var shared: Haptico = sharedHaptico
     
     public func prepare() throws {
         guard let engine = engine else {
