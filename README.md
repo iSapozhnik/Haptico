@@ -114,6 +114,11 @@ pod 'Haptico'
 
 isapozhnik, sapozhnik.ivan@gmail.com
 
+## Donation
+If you like this project and it helps you to reduce time to develop, you can give me a cup of ☕️ 😉 
+
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](http://paypal.me/isapozhnik)
+
 ## License <a name="license"></a>
 
 Haptico is available under the MIT license. See the LICENSE file for more info.
