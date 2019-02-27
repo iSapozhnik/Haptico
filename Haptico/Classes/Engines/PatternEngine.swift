@@ -19,6 +19,7 @@ class PatternEngine {
         return queue.operationCount == 0
     }
     var pattern: HapticoPattern!
+    var onComplete: (()->())?
 
     lazy var queue: OperationQueue = {
         var queue = OperationQueue()
@@ -29,9 +30,10 @@ class PatternEngine {
     private var engine: HapticFeedbackNotificationEngine?
     private var pauseDuration: TimeInterval
     
-    init(hapticEngine: HapticFeedbackNotificationEngine?, pauseDuration: TimeInterval = 0.11) {
+    init(hapticEngine: HapticFeedbackNotificationEngine?, pauseDuration: TimeInterval = 0.11, completion: (()->())? = nil) {
         self.engine = hapticEngine
         self.pauseDuration = pauseDuration
+        self.onComplete = completion
     }
     
     func generate() {
@@ -44,6 +46,11 @@ class PatternEngine {
                 queue.addOperation(SignalOperation(hapticEngine: engine, impact: .medium, pauseDuration: pauseDuration))
             } else if character == PatternChar.signalLight.rawValue {
                 queue.addOperation(SignalOperation(hapticEngine: engine, impact: .light, pauseDuration: pauseDuration))
+            }
+        }
+        queue.addOperation {
+            if let completion = self.onComplete {
+                completion()
             }
         }
     }
