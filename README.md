@@ -1,7 +1,7 @@
 ![](https://github.com/iSapozhnik/Haptico/raw/master/Assets/Haptico.png)
 
 # Haptico
-Haptico is easy to use iOS haptic feedback gnerator. Besides default haptic feedbacks it can play patterns! Checkout Example project.
+Haptico is easy to use iOS haptic feedback generator. Besides default haptic feedbacks it can play patterns! Checkout Example project.
 
 [![CI Status](http://img.shields.io/travis/isapozhnik/Haptico.svg?style=flat)](https://travis-ci.org/isapozhnik/Haptico)
 [![Version](https://img.shields.io/cocoapods/v/Haptico.svg?style=flat)](http://cocoapods.org/pods/Haptico)
