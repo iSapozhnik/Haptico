@@ -103,7 +103,7 @@ func showSuccessAlert() {
 
 ## Installation <a name="installation"></a>
 
-Haptico is available through [CocoaPods](#cocoapods) and [Carthage](#carthage). 
+Haptico is available through [CocoaPods](#cocoapods), [Carthage](#carthage) and [Swift Package Manager](#swift-package-manager). 
 
 ### Cocoapods
 To install it using [CocoaPods](https://cocoapods.org), simply add the following line to your Podfile:
@@ -117,6 +117,18 @@ To install it via [Carthage](https://github.com/Carthage/Carthage), add the foll
 
 ```
 github "iSapozhnik/Haptico"
+```
+
+### Swift Package Manager
+To install it using the [Swift Package Manager](https://developer.apple.com/documentation/xcode/adding_package_dependencies_to_your_app), either directly add it to your project using Xcode 11, or specify it as dependency in the Package.swift file:
+
+
+```swift
+// ...
+dependencies: [
+    .package(url: "https://github.com/iSapozhnik/Haptico.git", from: "1.0.2"),
+],
+//...
 ```
 
 ## Author <a name="author"></a>
