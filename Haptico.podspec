@@ -30,7 +30,7 @@ Haptico - easy to use haptic feedback generator with pattern-play support. Check
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Haptico/Classes/**/*'
+  s.source_files = 'Sources/Haptico/**/*'
   
   # s.resource_bundles = {
   #   'Haptico' => ['Haptico/Assets/*.png']
