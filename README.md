@@ -103,11 +103,20 @@ func showSuccessAlert() {
 
 ## Installation <a name="installation"></a>
 
-Haptico is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+Haptico is available through [CocoaPods](#cocoapods) and [Carthage](#carthage). 
+
+### Cocoapods
+To install it using [CocoaPods](https://cocoapods.org), simply add the following line to your Podfile:
 
 ```ruby
 pod 'Haptico'
+```
+
+### Carthage
+To install it via [Carthage](https://github.com/Carthage/Carthage), add the following line to your Cartfile and follow the instructions to [adding frameworks to an application](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application):
+
+```
+github "iSapozhnik/Haptico"
 ```
 
 ## Author <a name="author"></a>
