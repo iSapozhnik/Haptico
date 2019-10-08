@@ -5,7 +5,7 @@
 //  Created by Ivan Sapozhnik on 02.03.18.
 //
 
-import Foundation
+import UIKit
 
 enum HapticoError: Error {
     case notSupportedByOS
