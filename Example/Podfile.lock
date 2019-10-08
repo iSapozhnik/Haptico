@@ -1,5 +1,5 @@
 PODS:
-  - Haptico (1.0.2)
+  - Haptico (1.1.0)
 
 DEPENDENCIES:
   - Haptico (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Haptico: 74b14a1d6baecfaa003d5333c6850dbaaef24dcb
+  Haptico: f3b9e36957e7ec5a34721c65a0375454a0df7c7b
 
 PODFILE CHECKSUM: c48517df85ba99aa094ce93473edf3d13d632ef0
 
