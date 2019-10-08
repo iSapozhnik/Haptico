@@ -126,7 +126,7 @@ To install it using the [Swift Package Manager](https://developer.apple.com/docu
 ```swift
 // ...
 dependencies: [
-    .package(url: "https://github.com/iSapozhnik/Haptico.git", from: "1.0.2"),
+    .package(url: "https://github.com/iSapozhnik/Haptico.git", from: "1.1.0"),
 ],
 //...
 ```
