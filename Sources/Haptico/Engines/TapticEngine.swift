@@ -5,7 +5,7 @@
 //  Created by Ivan Sapozhnik on 02.03.18.
 //
 
-import Foundation
+import UIKit
 import AudioToolbox.AudioServices
 
 final class TapticEngine: HapticoEngine {

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "547AFD1B4232D1943B5CCF0D28E95139"
+               BlueprintIdentifier = "6EB9AEE9A59747F5A6B5763D6754E351"
                BuildableName = "Haptico.framework"
                BlueprintName = "Haptico"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,15 +47,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "547AFD1B4232D1943B5CCF0D28E95139"
-            BuildableName = "Haptico.framework"
-            BlueprintName = "Haptico"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

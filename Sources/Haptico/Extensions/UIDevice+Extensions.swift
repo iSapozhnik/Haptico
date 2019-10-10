@@ -5,7 +5,7 @@
 //  Created by Ivan Sapozhnik on 02.03.18.
 //
 
-import Foundation
+import UIKit
 
 // https://github.com/schickling/Device.swift/blob/master/Device/UIDeviceExtension.swift
 // https://ipsw.me/otas

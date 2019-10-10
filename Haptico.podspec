@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Haptico'
-  s.version          = '1.0.2'
+  s.version          = '1.1.0'
   s.summary          = 'Haptico - easy to use haptic feedback generator with pattern-play support'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ Haptico - easy to use haptic feedback generator with pattern-play support. Check
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'Haptico/Classes/**/*'
+  s.source_files = 'Sources/Haptico/**/*'
   
   # s.resource_bundles = {
   #   'Haptico' => ['Haptico/Assets/*.png']
