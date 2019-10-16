@@ -16,6 +16,7 @@ Haptico is easy to use iOS haptic feedback generator. Besides default haptic fee
 	3. [Pattern play](#pattern-play)
 	4. [UI Extensions](#ui-extensions)
 * [Installation](#installation)
+* [Mentions](#mentions)
 * [Author](#license)
 
 ## Example <a name="example"></a>
@@ -130,6 +131,9 @@ dependencies: [
 ],
 //...
 ```
+
+## Mentions <a name="mentions"></a>
+- [Medium](https://medium.com/better-programming/5-ios-libraries-that-will-inspire-your-creativity-26ee5837f9b7)
 
 ## Author <a name="author"></a>
 
