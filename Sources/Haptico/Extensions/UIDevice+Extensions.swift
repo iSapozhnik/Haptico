@@ -23,8 +23,9 @@ internal extension UIDevice {
                 deviceType == .iPhone7 || deviceType == .iPhone7Plus ||
                 deviceType == .iPhone8 || deviceType == .iPhone8Plus ||
                 deviceType == .iPhoneX || deviceType == .iPhoneXR ||
-                deviceType == .iPhoneXS || deviceType == .iPhoneXSMax
-
+                deviceType == .iPhoneXS || deviceType == .iPhoneXSMax ||
+                deviceType == .iPhone11 || deviceType == .iPhone11Pro ||
+                deviceType == .iPhone11ProMax || deviceType == .iPhoneSEGen2
         }
     }
     
@@ -33,7 +34,9 @@ internal extension UIDevice {
             return deviceType == .iPhone7 || deviceType == .iPhone7Plus ||
                 deviceType == .iPhone8 || deviceType == .iPhone8Plus ||
                 deviceType == .iPhoneX || deviceType == .iPhoneXR ||
-                deviceType == .iPhoneXS || deviceType == .iPhoneXSMax
+                deviceType == .iPhoneXS || deviceType == .iPhoneXSMax ||
+                deviceType == .iPhone11 || deviceType == .iPhone11Pro ||
+                deviceType == .iPhone11ProMax || deviceType == .iPhoneSEGen2
         }
     }
 }
@@ -71,6 +74,12 @@ internal enum DeviceType: String {
     case iPhoneXSMax
     case iPhoneXR
     
+    case iPhone11
+    case iPhone11Pro
+    case iPhone11ProMax
+
+    case iPhoneSEGen2
+    
     case iPodTouch1G
     case iPodTouch2G
     case iPodTouch3G
@@ -92,6 +101,7 @@ internal enum DeviceType: String {
     
     case iPadPro9Inch
     case iPadPro10p5Inch
+    case iPadPro11Inch
     case iPadPro12Inch
     
     case simulator
@@ -142,6 +152,10 @@ internal enum DeviceType: String {
         case .iPhoneXS: return "iPHone XS"
         case .iPhoneXSMax: return "iPhone XS Max"
         case .iPhoneXR: return "iPhone XR"
+        case .iPhone11: return "iPhone 11"
+        case .iPhone11Pro: return "iPhone 11 Pro"
+        case .iPhone11ProMax: return "iPhone 11 Pro Max"
+        case .iPhoneSEGen2: return "iPhone SE (2nd Gen)"
         case .iPodTouch1G: return "iPod Touch 1G"
         case .iPodTouch2G: return "iPod Touch 2G"
         case .iPodTouch3G: return "iPod Touch 3G"
@@ -160,6 +174,7 @@ internal enum DeviceType: String {
         case .iPadAir2: return "iPad Air 2"
         case .iPadPro9Inch: return "iPad Pro 9 Inch"
         case .iPadPro10p5Inch: return "iPad Pro 10.5 Inch"
+        case .iPadPro11Inch: return "iPad Pro 11 Inch"
         case .iPadPro12Inch: return "iPad Pro 12 Inch"
         case .simulator: return "Simulator"
         case .notAvailable: return "Not Available"
@@ -193,6 +208,10 @@ internal enum DeviceType: String {
         case .iPhoneXS: return ["iPhone11,2"]
         case .iPhoneXSMax: return ["iPhone11,4", "iPhone11,6"]
         case .iPhoneXR: return ["iPhone11,8"]
+        case .iPhone11: return ["iPhone12,1"]
+        case .iPhone11Pro: return ["iPhone12,3"]
+        case .iPhone11ProMax: return ["iPhone12,5"]
+        case .iPhoneSEGen2: return ["iPhone12,8"]
 
         case .iPodTouch1G: return ["iPod1,1"]
         case .iPodTouch2G: return ["iPod2,1"]
@@ -213,7 +232,8 @@ internal enum DeviceType: String {
         case .iPadAir2: return ["iPad5,3", "iPad5,4"]
         case .iPadPro9Inch: return ["iPad6,3", "iPad6,4"]
         case .iPadPro10p5Inch: return ["iPad7,3", "iPad7,4"]
-        case .iPadPro12Inch: return ["iPad6,7", "iPad6,8", "iPad7,1", "iPad7,2"]
+        case .iPadPro11Inch: return ["iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4"]
+        case .iPadPro12Inch: return ["iPad6,7", "iPad6,8", "iPad7,1", "iPad7,2", "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8"]
         }
     }
     
@@ -260,6 +280,10 @@ extension DeviceType {
         iPhoneXS,
         iPhoneXSMax,
         iPhoneXR,
+        iPhone11,
+        iPhone11Pro,
+        iPhone11ProMax,
+        iPhoneSEGen2,
         iPodTouch1G,
         iPodTouch2G,
         iPodTouch3G,
@@ -278,6 +302,7 @@ extension DeviceType {
         iPadAir2,
         iPadPro9Inch,
         iPadPro10p5Inch,
+        iPadPro11Inch,
         iPadPro12Inch,
         simulator,
         notAvailable
