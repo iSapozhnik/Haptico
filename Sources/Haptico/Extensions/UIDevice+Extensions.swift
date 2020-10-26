@@ -25,7 +25,9 @@ internal extension UIDevice {
                 deviceType == .iPhoneX || deviceType == .iPhoneXR ||
                 deviceType == .iPhoneXS || deviceType == .iPhoneXSMax ||
                 deviceType == .iPhone11 || deviceType == .iPhone11Pro ||
-                deviceType == .iPhone11ProMax || deviceType == .iPhoneSEGen2
+                deviceType == .iPhone11ProMax || deviceType == .iPhoneSEGen2 ||
+                deviceType == .iPhone12Mini ||  deviceType == .iPhone12 ||
+                deviceType == .iPhone12Pro  ||  deviceType == .iPhone12ProMax
         }
     }
     
@@ -36,7 +38,9 @@ internal extension UIDevice {
                 deviceType == .iPhoneX || deviceType == .iPhoneXR ||
                 deviceType == .iPhoneXS || deviceType == .iPhoneXSMax ||
                 deviceType == .iPhone11 || deviceType == .iPhone11Pro ||
-                deviceType == .iPhone11ProMax || deviceType == .iPhoneSEGen2
+                deviceType == .iPhone11ProMax || deviceType == .iPhoneSEGen2 ||
+                deviceType == .iPhone12Mini ||  deviceType == .iPhone12 ||
+                deviceType == .iPhone12Pro  ||  deviceType == .iPhone12ProMax
         }
     }
 }
@@ -79,6 +83,11 @@ internal enum DeviceType: String {
     case iPhone11ProMax
 
     case iPhoneSEGen2
+    
+    case iPhone12Mini
+    case iPhone12
+    case iPhone12Pro
+    case iPhone12ProMax
     
     case iPodTouch1G
     case iPodTouch2G
@@ -156,6 +165,10 @@ internal enum DeviceType: String {
         case .iPhone11Pro: return "iPhone 11 Pro"
         case .iPhone11ProMax: return "iPhone 11 Pro Max"
         case .iPhoneSEGen2: return "iPhone SE (2nd Gen)"
+        case .iPhone12Mini: return "iPhone 12 Mini"
+        case .iPhone12: return "iPhone 12"
+        case .iPhone12Pro: return "iPhone 12 Pro"
+        case .iPhone12ProMax: return "iPhone 12 Pro Max"
         case .iPodTouch1G: return "iPod Touch 1G"
         case .iPodTouch2G: return "iPod Touch 2G"
         case .iPodTouch3G: return "iPod Touch 3G"
@@ -212,6 +225,10 @@ internal enum DeviceType: String {
         case .iPhone11Pro: return ["iPhone12,3"]
         case .iPhone11ProMax: return ["iPhone12,5"]
         case .iPhoneSEGen2: return ["iPhone12,8"]
+        case .iPhone12Mini: return ["iPhone13,1"]
+        case .iPhone12: return ["iPhone13,2"]
+        case .iPhone12Pro: return ["iPhone13,3"]
+        case .iPhone12ProMax: return ["iPhone13,4"]
 
         case .iPodTouch1G: return ["iPod1,1"]
         case .iPodTouch2G: return ["iPod2,1"]
@@ -283,6 +300,10 @@ extension DeviceType {
         iPhone11,
         iPhone11Pro,
         iPhone11ProMax,
+        iPhone12Mini,
+        iPhone12,
+        iPhone12Pro,
+        iPhone12ProMax,
         iPhoneSEGen2,
         iPodTouch1G,
         iPodTouch2G,
