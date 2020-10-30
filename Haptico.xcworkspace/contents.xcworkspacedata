@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Haptico.xcodeproj">
+      location = "group:Example/Example.xcodeproj">
    </FileRef>
 </Workspace>

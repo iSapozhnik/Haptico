@@ -1,6 +1,0 @@
-framework module Haptico {
-  umbrella header "Haptico-umbrella.h"
-
-  export *
-  module * { export * }
-}

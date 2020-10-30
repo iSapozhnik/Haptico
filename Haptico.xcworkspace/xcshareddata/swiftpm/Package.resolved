@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Haptico",
+        "repositoryURL": "https://github.com/iSapozhnik/Haptico",
+        "state": {
+          "branch": "master",
+          "revision": "971defee809be62d30b778322ff8d1aa3a8113c2",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
