@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreHaptics
 
 // https://github.com/schickling/Device.swift/blob/master/Device/UIDeviceExtension.swift
 // https://ipsw.me/otas
@@ -13,11 +14,11 @@ import UIKit
 internal extension UIDevice {
     
     /// Returns the `DeviceType` of the device in use
-    internal var deviceType: DeviceType {
+    var deviceType: DeviceType {
         return DeviceType.current
     }
     
-    internal var hasTapticEngine: Bool {
+    var hasTapticEngine: Bool {
         get {
             return deviceType == .iPhone6S || deviceType == .iPhone6SPlus ||
                 deviceType == .iPhone7 || deviceType == .iPhone7Plus ||
@@ -31,16 +32,20 @@ internal extension UIDevice {
         }
     }
     
-    internal var hasHapticFeedback: Bool {
+    var hasHapticFeedback: Bool {
         get {
-            return deviceType == .iPhone7 || deviceType == .iPhone7Plus ||
-                deviceType == .iPhone8 || deviceType == .iPhone8Plus ||
-                deviceType == .iPhoneX || deviceType == .iPhoneXR ||
-                deviceType == .iPhoneXS || deviceType == .iPhoneXSMax ||
-                deviceType == .iPhone11 || deviceType == .iPhone11Pro ||
-                deviceType == .iPhone11ProMax || deviceType == .iPhoneSEGen2 ||
-                deviceType == .iPhone12Mini ||  deviceType == .iPhone12 ||
-                deviceType == .iPhone12Pro  ||  deviceType == .iPhone12ProMax
+            if #available(iOS 13.0, *) {
+                return CHHapticEngine.capabilitiesForHardware().supportsHaptics
+            } else {
+                return deviceType == .iPhone7 || deviceType == .iPhone7Plus ||
+                    deviceType == .iPhone8 || deviceType == .iPhone8Plus ||
+                    deviceType == .iPhoneX || deviceType == .iPhoneXR ||
+                    deviceType == .iPhoneXS || deviceType == .iPhoneXSMax ||
+                    deviceType == .iPhone11 || deviceType == .iPhone11Pro ||
+                    deviceType == .iPhone11ProMax || deviceType == .iPhoneSEGen2 ||
+                    deviceType == .iPhone12Mini ||  deviceType == .iPhone12 ||
+                    deviceType == .iPhone12Pro  ||  deviceType == .iPhone12ProMax
+            }
         }
     }
 }

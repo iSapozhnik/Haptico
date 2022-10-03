@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "Haptico",
     platforms: [
-        .iOS(.v9),
+        .iOS(.v13),
     ],
     products: [
         .library(name: "Haptico", targets: ["Haptico"])
