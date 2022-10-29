@@ -28,7 +28,7 @@ Haptico - easy to use haptic feedback generator with pattern-play support. Check
   s.source           = { :git => 'https://github.com/isapozhnik/Haptico.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'Sources/Haptico/**/*'
   
