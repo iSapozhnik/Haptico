@@ -13,6 +13,12 @@ class PatternEngine {
         case signalHeavy = "O"
         case signalMedium = "o"
         case signalLight = "."
+        
+        @available(iOS 13.0, *)
+        case signalRigid = "r"
+        
+        @available(iOS 13.0, *)
+        case signalSoft = "s"
     }
     
     var isFinished: Bool {
@@ -35,7 +41,7 @@ class PatternEngine {
     }
     
     func generate() {
-        for (_, character) in pattern.pattern.enumerated() {
+        for character in pattern.pattern {
             if character == PatternChar.space.rawValue {
                 queue.addOperation(PauseOperation(delay: pattern.delay))
             } else if character == PatternChar.signalHeavy.rawValue {
@@ -44,6 +50,10 @@ class PatternEngine {
                 queue.addOperation(SignalOperation(hapticEngine: engine, impact: .medium, pauseDuration: pauseDuration))
             } else if character == PatternChar.signalLight.rawValue {
                 queue.addOperation(SignalOperation(hapticEngine: engine, impact: .light, pauseDuration: pauseDuration))
+            } else if #available(iOS 13.0, *), character == PatternChar.signalRigid.rawValue {
+                queue.addOperation(SignalOperation(hapticEngine: engine, impact: .rigid, pauseDuration: pauseDuration))
+            } else if #available(iOS 13.0, *), character == PatternChar.signalSoft.rawValue {
+                queue.addOperation(SignalOperation(hapticEngine: engine, impact: .soft, pauseDuration: pauseDuration))
             }
         }
     }
