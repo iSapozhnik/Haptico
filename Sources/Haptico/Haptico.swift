@@ -19,10 +19,26 @@ public enum HapticoNotification {
     case error
 }
 
-public enum HapticoImpact {
+public enum HapticoImpact: CaseIterable {
     case light
     case medium
     case heavy
+    
+    @available(iOS 13.0, *)
+    case rigid
+    
+    @available(iOS 13.0, *)
+    case soft
+    
+    public static var allCases: [HapticoImpact] {
+        var cases: [HapticoImpact] = [.light, .medium, .heavy]
+        
+        if #available(iOS 13.0, *) {
+            cases.append(contentsOf: [.soft, .rigid])
+        }
+        
+        return cases
+    }
 }
 
 public protocol HapticoEngine {

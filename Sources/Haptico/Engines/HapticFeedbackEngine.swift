@@ -16,18 +16,22 @@ final class HapticFeedbackNotificationEngine: HapticoEngine {
     }
     
     @available(iOS 10.0, *)
-    private var impactGenerator: (light: UIImpactFeedbackGenerator, medium: UIImpactFeedbackGenerator, heavy: UIImpactFeedbackGenerator) {
-        return (light: UIImpactFeedbackGenerator(style: .light), medium: UIImpactFeedbackGenerator(style: .medium), heavy: UIImpactFeedbackGenerator(style: .heavy))
+    private var selectionGenerator: UISelectionFeedbackGenerator {
+        return UISelectionFeedbackGenerator()
     }
+    
+    @available(iOS 10.0, *)
+    private let impactGenerators: [UIImpactFeedbackGenerator] = {
+        HapticoImpact.allCases.map({ UIImpactFeedbackGenerator(style: $0.feedbackStyle) })
+    }()
 
     func prepare() throws {
         guard #available(iOS 10, *) else { throw HapticoError.notSupportedByOS }
         guard UIDevice.current.hasHapticFeedback else { throw HapticoError.notSupportedByDevice }
         
         generator.prepare()
-        impactGenerator.heavy.prepare()
-        impactGenerator.medium.prepare()
-        impactGenerator.light.prepare()
+        selectionGenerator.prepare()
+        impactGenerators.forEach({ $0.prepare() })
     }
     
     func generate(_ notification: HapticoNotification) {
@@ -48,13 +52,15 @@ final class HapticFeedbackNotificationEngine: HapticoEngine {
         guard #available(iOS 10, *) else { return }
         guard UIDevice.current.hasHapticFeedback else { return }
         
-        switch impact {
-        case .light:
-            impactGenerator.light.impactOccurred()
-        case .medium:
-            impactGenerator.medium.impactOccurred()
-        case .heavy:
-            impactGenerator.heavy.impactOccurred()
-        }
+        guard let index = HapticoImpact.allCases.firstIndex(of: impact) else { return }
+        let generator = impactGenerators[index]
+        generator.impactOccurred()
+    }
+    
+    func selectionChanged() {
+        guard #available(iOS 10, *) else { return }
+        guard UIDevice.current.hasHapticFeedback else { return }
+        
+        selectionGenerator.selectionChanged()
     }
 }
